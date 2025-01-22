@@ -1,12 +1,15 @@
 // 色の定義
 
-$MainColor1:#1e90ff;
-$MainColor2:#87cefa;
-$MainColor3:#2c3e50;
+$MainColor1:#0f19bf;
+$MainColor2:#eef4ff;
+$MainColor3:#363636;
 $BaseColor1:#fff;
 $BaseColor2:#f5f5f5;
-$BaseColor3:#eaf6ff;
-$AccentColor1:#ffc107;
+$BaseColor3:#999999;
+$AccentColor1:#e76f51;
 $AccentColor2:#ff4500;
-$GradationColor:rgba(135, 206, 250, 0.7);
+$AccentColor3:#ffc107;
 $BgMaskColor:rgb(44, 62, 80, 0.9);
+
+$GradationColor:linear-gradient(270deg, #0f19bf, #071359);
+$MarkerColor:rgba(231, 111, 81, 0.4);
