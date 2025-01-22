@@ -151,7 +151,7 @@
   color: $BaseColor1;
   padding: 100px 50px 60px 50px;
   @include sp{
-    padding: 0 20px 60px 20px;
+    padding: 60px 20px 60px 20px;
   }
   .inner{
     display: flex;
@@ -251,7 +251,7 @@
         margin: 0;
         order: 1;
         width: 100%;
-        padding: 20px 100px;
+        padding: 20px 80px;
         text-align: center;
       }
       img{
@@ -303,7 +303,7 @@
         @include sp{
           width: 100%;
           order: 1;
-          padding: 0 100px;
+          padding: 0 70px;
           margin-bottom: 20px;
         }
         img{

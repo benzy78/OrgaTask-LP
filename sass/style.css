@@ -428,7 +428,7 @@ select:focus {
 }
 @media (max-width: 768px) {
   .keyvisual {
-    padding: 0 20px 60px 20px;
+    padding: 60px 20px 60px 20px;
   }
 }
 .keyvisual .inner {
@@ -559,7 +559,7 @@ select:focus {
     margin: 0;
     order: 1;
     width: 100%;
-    padding: 20px 100px;
+    padding: 20px 80px;
     text-align: center;
   }
 }
@@ -618,7 +618,7 @@ select:focus {
   .feature .fea_contents .fea_content .fea_cont_eyecatch {
     width: 100%;
     order: 1;
-    padding: 0 100px;
+    padding: 0 70px;
     margin-bottom: 20px;
   }
 }
