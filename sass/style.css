@@ -1042,6 +1042,7 @@ select:focus {
 }
 .start .start_contents .start_cont_text {
   margin-right: 60px;
+  max-width: 60%;
 }
 @media (max-width: 992px) {
   .start .start_contents .start_cont_text {
@@ -1050,6 +1051,7 @@ select:focus {
 }
 @media (max-width: 768px) {
   .start .start_contents .start_cont_text {
+    max-width: 100%;
     margin-right: 0;
     width: 100%;
     margin-bottom: 20px;
