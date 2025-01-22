@@ -279,7 +279,11 @@ select:focus {
 .header {
   background: linear-gradient(270deg, #0f19bf, #071359);
   color: #fff;
-  padding: 30px;
+  padding: 20px 30px 20px 30px;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
 }
 @media (max-width: 768px) {
   .header {
@@ -294,6 +298,7 @@ select:focus {
   font-size: 30px;
   font-family: "Quicksand", "Helvetica Neue", sans-serif;
   line-height: 1;
+  margin-top: 10px;
 }
 @media (max-width: 992px) {
   .header .inner .header_logo {
@@ -328,6 +333,7 @@ select:focus {
 .header .inner .header_nav .nav_links {
   display: flex;
   flex-wrap: wrap;
+  align-items: baseline;
   width: 100%;
   transition: all 0.5s ease;
 }
@@ -342,7 +348,7 @@ select:focus {
 }
 @media (max-width: 992px) {
   .header .inner .header_nav .nav_links li {
-    margin-left: 25px;
+    margin-left: 20px;
   }
 }
 @media (max-width: 768px) {
@@ -359,6 +365,23 @@ select:focus {
 @media (max-width: 992px) {
   .header .inner .header_nav .nav_links li a {
     font-size: 16px;
+  }
+}
+.header .inner .header_nav .nav_links li .header_cta {
+  border: 1px solid #f5f5f5;
+  border-radius: 30px;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #0f19bf;
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .header .inner .header_nav .nav_links li .header_cta {
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-weight: normal;
+    padding: 30px;
   }
 }
 @media (max-width: 768px) {
@@ -401,7 +424,7 @@ select:focus {
 .keyvisual {
   background: linear-gradient(270deg, #0f19bf, #071359);
   color: #fff;
-  padding: 20px 50px 60px 50px;
+  padding: 100px 50px 60px 50px;
 }
 @media (max-width: 768px) {
   .keyvisual {
@@ -692,7 +715,7 @@ select:focus {
 }
 .feature .fea_contents .fea_content .fea_cont_text .fea_cont_explanation .marker {
   background-color: rgba(231, 111, 81, 0.4);
-  padding: 2px 0;
+  transition: all 0.7s ease;
 }
 
 .voice {
@@ -1299,12 +1322,34 @@ select:focus {
 }
 
 .keyvisual .inner {
-  opacity: 0; /* 最初は透明 */
-  transform: translateY(60px); /* 下から少し持ち上がるような効果 */
-  transition: opacity 1s ease, transform 1s ease; /* アニメーション */
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease;
 }
 
-.keyvisual .inner.visible {
+.keyvisual .inner.show {
   opacity: 1;
-  transform: translateY(0); /* 元の位置に戻す */
+  transform: translateY(0);
+}
+
+.section .inner {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+
+.section .inner.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fea_content {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease;
+}
+
+.fea_content.show {
+  opacity: 1;
+  transform: translateY(0);
 }/*# sourceMappingURL=style.css.map */

@@ -2,7 +2,11 @@
 .header{
   background: $GradationColor;
   color: $BaseColor1;
-  padding: 30px;
+  padding: 20px 30px 20px 30px;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
   @include sp{
     padding: 20px;
   }
@@ -13,6 +17,7 @@
       font-size: 30px;
       font-family: $ff-en-maru;
       line-height: 1;
+      margin-top: 10px;
       @include tab{
         font-size: 24px;
       }
@@ -44,6 +49,7 @@
       .nav_links{
         display: flex;
         flex-wrap: wrap;
+        align-items: baseline;
         width: 100%;
         -webkit-transition: all .5s ease;
         -o-transition: all .5s ease;
@@ -55,7 +61,7 @@
           list-style: none;
           margin-left: 30px;
           @include tab{
-            margin-left: 25px;
+            margin-left: 20px;
           }
           @include sp{
             margin-left: 0;
@@ -67,6 +73,21 @@
             font-family: $ff-gothic;
             @include tab{
               font-size: 16px;
+            }
+          }
+          .header_cta{
+            border: 1px solid $BaseColor2;
+            border-radius: 30px;
+            padding: 10px 20px;
+            background-color: $BaseColor1;
+            color: $MainColor1;
+            font-weight: bold;
+            @include sp{
+              border: none;
+              background-color: transparent;
+              color: $BaseColor1;
+              font-weight: normal;
+              padding: 30px;
             }
           }
         }
@@ -128,7 +149,7 @@
 .keyvisual{
   background: $GradationColor;
   color: $BaseColor1;
-  padding: 20px 50px 60px 50px;
+  padding: 100px 50px 60px 50px;
   @include sp{
     padding: 0 20px 60px 20px;
   }
@@ -363,7 +384,7 @@
           text-align: justify;
           .marker{
             background-color: $MarkerColor;
-            padding: 2px 0;
+            transition: all 0.7s ease;
           }
         }
       }
@@ -896,13 +917,38 @@
 }
 // under-construction end
 
+
+// アニメーション
 .keyvisual .inner {
-  opacity: 0; /* 最初は透明 */
-  transform: translateY(60px); /* 下から少し持ち上がるような効果 */
-  transition: opacity 1.0s ease, transform 1s ease; /* アニメーション */
+  opacity: 0; 
+  transform: translateY(50px);
+  transition: all 1s ease;
 }
 
-.keyvisual .inner.visible {
+.keyvisual .inner.show {
   opacity: 1;
-  transform: translateY(0); /* 元の位置に戻す */
+  transform: translateY(0);
 }
+
+.section .inner {
+  opacity: 0; 
+  transform: translateY(50px); 
+  transition: all 0.8s ease; 
+}
+
+.section .inner.show {
+  opacity: 1; 
+  transform: translateY(0);
+}
+
+.fea_content {
+  opacity: 0; 
+  transform: translateY(50px);
+  transition: all 1s ease;
+}
+
+.fea_content.show{
+  opacity: 1; 
+  transform: translateY(0); 
+}
+
