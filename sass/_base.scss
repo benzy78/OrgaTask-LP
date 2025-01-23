@@ -64,9 +64,6 @@ table {
 }
 
 th,td {
-	padding: 4px 6px;
-	text-align: left;
-	vertical-align: top;
 	border: 1px solid $MainColor3;
 }
 
@@ -248,8 +245,9 @@ select {
   overflow: hidden;
 }
 
+
 .inner{
-	max-width: 1240px;
+	max-width: 1040px;
 	width: 100%;
 	margin: 0 auto;
 }
