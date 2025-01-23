@@ -481,6 +481,10 @@
         .voice_cont_detail{
           font-size: 16px;
           text-align: justify;
+          margin-bottom: 20px;
+          @include sp{
+            margin-bottom: 10px;
+          }
         }
       }
     }
@@ -500,7 +504,7 @@
     width: 100%;
     border-collapse: collapse;
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     border: none;
     @include sp{
       margin-bottom: 30px;
@@ -591,13 +595,17 @@
   }
   
   .plan-table td {
-    font-size: 14px;
-    padding: 15px;
-  }
-  .plan-table th {
-    font-size: 14px;
+    font-size: 16px;
     padding: 15px;
     @include sp{
+      font-size: 14px;
+    }
+  }
+  .plan-table th {
+    font-size: 16px;
+    padding: 15px;
+    @include sp{
+      font-size: 14px;
       padding: 10px;
     }
   }

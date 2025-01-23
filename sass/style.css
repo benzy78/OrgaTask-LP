@@ -818,6 +818,12 @@ select:focus {
 .voice .voice_contents .voice_content .voice_cont_text .voice_cont_detail {
   font-size: 16px;
   text-align: justify;
+  margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+  .voice .voice_contents .voice_content .voice_cont_text .voice_cont_detail {
+    margin-bottom: 10px;
+  }
 }
 
 .plan {
@@ -833,7 +839,7 @@ select:focus {
   width: 100%;
   border-collapse: collapse;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   border: none;
 }
 @media (max-width: 768px) {
@@ -918,15 +924,21 @@ select:focus {
   border-bottom: 3px solid #0f19bf;
 }
 .plan .plan-table td {
-  font-size: 14px;
+  font-size: 16px;
   padding: 15px;
 }
+@media (max-width: 768px) {
+  .plan .plan-table td {
+    font-size: 14px;
+  }
+}
 .plan .plan-table th {
-  font-size: 14px;
+  font-size: 16px;
   padding: 15px;
 }
 @media (max-width: 768px) {
   .plan .plan-table th {
+    font-size: 14px;
     padding: 10px;
   }
 }
