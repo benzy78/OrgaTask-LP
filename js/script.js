@@ -1,7 +1,7 @@
 $(document).ready(function () {
-  $(".acco_btn").click(function () {
+  $(".acco__btn").click(function () {
     // ボタンの次の要素（acco_content）をスライドトグル
-    $(this).next(".acco_content").slideToggle(300);
+    $(this).next(".acco__content").slideToggle(300);
 
     // ボタンの矢印を回転
     $(this).toggleClass("active");
@@ -9,9 +9,9 @@ $(document).ready(function () {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  const menuToggle = document.querySelector(".menu-toggle");
-  const navLinks = document.querySelector(".header_nav");
-  const navItems = document.querySelectorAll(".nav_links a"); 
+  const menuToggle = document.querySelector(".header__menu-toggle");
+  const navLinks = document.querySelector(".header__nav");
+  const navItems = document.querySelectorAll(".header__nav-links a"); 
 
   menuToggle.addEventListener("click", () => {
     navLinks.classList.toggle("active");
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // keyvisualの表示アニメーション
   $(document).ready(function () {
-    const $keyvisual = $('.keyvisual .inner');
+    const $keyvisual = $('.keyvisual .inner--s');
     $(window).on('scroll', function () {
       const scrollTop = $(window).scrollTop(); // 現在のスクロール位置
       const windowHeight = $(window).height(); // ウィンドウの高さ

@@ -1,6 +1,20 @@
+
+// inner
+.inner--m{
+	max-width: 1240px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.inner--s{
+  max-width: 1040px;
+	width: 100%;
+	margin: 0 auto;
+}
+
 // ctaボタン
-.cta_btn{
-  padding: 15px 0;
+.cta-btn{
+  padding: 24px 0;
   text-align: center;
   display: block;
   color: $BaseColor1;
@@ -9,10 +23,17 @@
   font-size: 20px;
   font-weight: bold;
   font-family: $ff-gothic;
+  line-height: 1;
   border-radius: 5px;
-  background-color: $AccentColor1;
+  background-color: $ac_orange;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  transition: all 0.7s;
+  transition: all 0.5s;
+  &:hover{
+    border: 2px solid $ac_orange;
+    background-color: $bgc_white;
+    color: $ac_orange;
+    box-shadow: none;
+  }
   @include tab{
     font-size: 16px;
     max-width: 350px;
@@ -26,10 +47,27 @@
   transition: all 0.5s ease;
   &:hover{
     box-shadow: none;
-    opacity: 0.7;
+    opacity: 0.6;
   }
 }
 
+.section__ttl{
+  text-align: center;
+  font-size: 32px;
+  font-family: $ff-gothic;
+  margin-bottom: 48px;
+  line-height: 1;
+  @include sp{
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+}
+
+.marker{
+  background-color: $ac_light-orange;
+}
+
+// 後で消す
 .sec_hed{
   text-align: center;
   font-size: 30px;

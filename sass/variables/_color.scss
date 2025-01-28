@@ -1,5 +1,27 @@
-// 色の定義
+// Color
 
+// Font Color
+$fc_black:#363636;
+$fc_white:#ffffff;
+$fc_glay:#999999;
+
+// Main Color
+$mc_blue:#0f19bf;
+$mc_gradient-blue:linear-gradient(270deg, #0f19bf, #071359);
+
+// Accent Color
+$ac_orange:#e76f51;
+$ac_light-orange:rgba(231, 111, 81, 0.4);
+$ac_yellow:#ffc107;
+
+// Background Color
+$bgc_light-blue:#eef4ff;
+$bgc_glay:#f5f5f5;
+$bgc_white:#ffffff;
+
+
+
+// 以下消す
 $MainColor1:#0f19bf;
 $MainColor2:#eef4ff;
 $MainColor3:#363636;

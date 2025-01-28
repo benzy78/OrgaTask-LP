@@ -25,20 +25,21 @@
     <div class="wrapper">
         <!-- header -->
         <header class="header">
-            <div class="inner">
-                <h1 class="header_logo">OrgaTask</h1>
-                <nav class="header_nav">
-                    <button class="menu-toggle" aria-label="Toggle navigation">
-                        <span class="menu-icon"></span>
-                        <span class="menu-icon"></span>
-                        <span class="menu-icon"></span>
+            <div class="inner--m header__inner">
+                <h1 class="header__logo"><a href="./index.html#keyvisual">OrgaTask</a></h1>
+                <nav class="header__nav">
+                    <button class="header__menu-toggle" aria-label="Toggle navigation">
+                        <span class="header__menu-icon"></span>
+                        <span class="header__menu-icon"></span>
+                        <span class="header__menu-icon"></span>
+                        <span class="header__menu-label">Menu</span>
                     </button>
-                    <ul class="nav_links">
+                    <ul class="header__nav-links">
                         <li><a href="./index.html#feature">OrgaTaskの特徴</a></li>
                         <li><a href="./index.html#voice">ユーザーの声</a></li>
                         <li><a href="./index.html#plan">プラン</a></li>
                         <li><a href="./index.html#question">よくある質問</a></li>
-                        <li><a class="header_cta" href="./index.html#start">OrgaTaskを始める</a></li>
+                        <li><a class="header__nav-cta" href="./index.html#start">OrgaTaskを始める</a></li>
                     </ul>
                 </nav>
             </div>
@@ -46,62 +47,60 @@
         <!-- header end -->
         <!-- keyvisual -->
         <section id="keyvisual" class="keyvisual">
-            <div class="inner">
-                <div class="key_01">
-                    <h2>タスク管理アプリの答えがここにある。</h2>
-                    <p>直感的な操作、ライフスタイルに合ったカスタマイズ、そして他ツールとのシームレス連携を一つに。</p>
-                    <div class="download_btn">
-                        <a href="./html/under-construction.html" class="app_btn btn"><img src="./images/appstore_btn.svg" alt="App Storeからダウンロード"></a>
-                        <a href="./html/under-construction.html" class="goo_btn btn"><img src="./images/googleplay_btn.svg" alt="Google Playで手に入れよう"></a>
+            <div class="inner--s keyvisual__inner">
+                <div class="keyvisual__text">
+                    <h2 class="keyvisual__text-ttl">タスク管理アプリの答えがここにある。</h2>
+                    <p class="keyvisual__text-subttl">直感的な操作、ライフスタイルに合ったカスタマイズ、そして他ツールとのシームレス連携を一つに。</p>
+                    <div class="keyvisual__btn">
+                        <a href="./html/under-construction.html" class="keyvisual__btn-app btn"><img src="./images/appstore_btn.svg" alt="App Storeからダウンロード"></a>
+                        <a href="./html/under-construction.html" class="keyvisual__btn-goo btn"><img src="./images/googleplay_btn.svg" alt="Google Playで手に入れよう"></a>
                     </div>
-                    <a href="./html/under-construction.html" class="cta_btn btn">Webで無料で始める</a>
+                    <a href="./html/under-construction.html" class="cta-btn">Webで無料で始める</a>
                 </div>
-                <div class="key_02"><img src="./images/keyvisual.png" alt=""></div>
+                <div class="keyvisual__eyecatch"><img src="./images/keyvisual.png" alt="UrgaTaskのUI"></div>
             </div>
         </section>
         <!-- keyvisual end -->
          
           <!-- feature -->
            <section id="feature" class="feature">
-            <div class="inner">
-                <h2 class="sec_hed">OrgaTaskの主な特徴</h2>
-                <div class="fea_contents">
-                    <div class="fea_content">
-                        <div class="fea_cont_text">
-                            <span class="fea_cont_number">1</span>
-                            <p class="fea_cont_subtitle">直感的</p>
-                            <h3>使いやすさを追求したデザイン</h3>
-                            <p class="fea_cont_explanation"><span class="marker">「タスク管理アプリをダウンロードしたけど、使い方が分からず結局使わなくなった…」</span>そんな経験ありませんか？OrgaTaskの直感的なUIは、初心者のユーザーでも簡単にアプリを操作できるように設計されてます。シンプルで洗練されたデザインがストレスのない作業環境を提供します。</p>
-                        </div>
-                        <div class="fea_cont_eyecatch"><img src="./images/ui.png" alt=""></div>
+            <div class="inner--s">
+                <h2 class="section__ttl">OrgaTaskの主な特徴</h2>
+                <div class="feature__card">
+                    <div class="feature__card-text">
+                        <span class="feature__text-number">1</span>
+                        <p class="feature__text-subttl">直感的</p>
+                        <h3 class="feature__text-ttl">使いやすさを追求したデザイン</h3>
+                        <p class="feature__text-description"><span class="marker">「タスク管理アプリをダウンロードしたけど、使い方が分からず結局使わなくなった…」</span>そんな経験ありませんか？OrgaTaskの直感的なUIは、初心者のユーザーでも簡単にアプリを操作できるように設計されてます。シンプルで洗練されたデザインがストレスのない作業環境を提供します。</p>
                     </div>
-                    <div class="fea_content">
-                        <div class="fea_cont_text">
-                            <span class="fea_cont_number">2</span>
-                            <p class="fea_cont_subtitle">最先端技術</p>
-                            <h3>AIがあなたの予定をもっと賢く</h3>
-                            <p class="fea_cont_explanation"><span class="marker">「忙しい日々で、重要な予定やタスクをうっかり忘れてしまうことはありませんか？」</span>OrgaTaskは、最新のAI技術を搭載し、あなたのタスクやスケジュールを学習。抜けている予定や重要なタスクを提案し、記載漏れゼロを実現します。</p>
-                        </div>
-                        <div class="fea_cont_eyecatch"><img src="./images/ai.png" alt=""></div>
+                    <div class="feature__card--images"><img src="./images/ui.png" alt=""></div>
+                </div>
+                <div class="feature__card">
+                    <div class="feature__card-text">
+                        <span class="feature__text-number">2</span>
+                        <p class="feature__text-subttl">最先端技術</p>
+                        <h3 class="feature__text-ttl">AIがあなたの予定をもっと賢く</h3>
+                        <p class="feature__text-description"><span class="marker">「忙しい日々で、重要な予定やタスクをうっかり忘れてしまうことはありませんか？」</span>OrgaTaskは、最新のAI技術を搭載し、あなたのタスクやスケジュールを学習。抜けている予定や重要なタスクを提案し、記載漏れゼロを実現します。</p>
                     </div>
-                    <div class="fea_content">
-                        <div class="fea_cont_text">
-                            <span class="fea_cont_number">3</span>
-                            <p class="fea_cont_subtitle">連携</p>
-                            <h3>多彩なツールとのスムーズな連携</h3>
-                            <p class="fea_cont_explanation">OrgaTaskはGoogleカレンダー、Slackなどの人気ツールと簡単に連携することができます。これにより、<span class="marker">複数のツールを使い分けることなく、家族の予定や会社のプロジェクトスケジュールもひと目で把握でき</span>、抜け漏れのない管理を実現します。</p>
-                        </div>
-                        <div class="fea_cont_eyecatch fea_cont_eyecatch_square"><img src="./images/relation-tool.webp" alt=""></div>
+                    <div class="feature__card--images"><img src="./images/ai.png" alt=""></div>
+                </div>
+                <div class="feature__card">
+                    <div class="feature__card-text">
+                        <span class="feature__text-number">3</span>
+                        <p class="feature__text-subttl">連携</p>
+                        <h3 class="feature__text-ttl">多彩なツールとのスムーズな連携</h3>
+                        <p class="feature__text-description">OrgaTaskはGoogleカレンダー、Slackなどの人気ツールと簡単に連携することができます。これにより、<span class="marker">複数のツールを使い分けることなく、家族の予定や会社のプロジェクトスケジュールもひと目で把握でき</span>、抜け漏れのない管理を実現します。</p>
                     </div>
-                    <div class="fea_content">
-                        <div class="fea_cont_text">
-                            <span class="fea_cont_number">4</span>
-                            <p class="fea_cont_subtitle">同期</p>
-                            <h3>データが同期されない不便さを解消</h3>
-                            <p class="fea_cont_explanation">「スマホで登録したタスクが、PCで見られない…」そんな同期ミスの経験、ありませんか？<span class="marker">OrgaTaskなら、スマートフォン、タブレット、PC間でデータがリアルタイムに同期。</span>外出先でスマホに追加したタスクも、オフィスで開くPCに即座に反映。OrgaTaskがあれば、デバイス間の切り替えもシームレスです。</p>
-                        </div>
-                        <div class="fea_cont_eyecatch fea_cont_eyecatch_square"><img src="./images/synchro.png" alt=""></div>
+                    <div class="feature__card-images feature__card-images--square"><img src="./images/relation-tool.webp" alt=""></div>
+                </div>
+                <div class="feature__card">
+                    <div class="feature__card-text">
+                        <span class="feature__text-number">4</span>
+                        <p class="feature__text-subttl">同期</p>
+                        <h3 class="feature__text-ttl">データが同期されない不便さを解消</h3>
+                        <p class="feature__text-description">「スマホで登録したタスクが、PCで見られない…」そんな同期ミスの経験、ありませんか？<span class="marker">OrgaTaskなら、スマートフォン、タブレット、PC間でデータがリアルタイムに同期。</span>外出先でスマホに追加したタスクも、オフィスで開くPCに即座に反映。OrgaTaskがあれば、デバイス間の切り替えもシームレスです。</p>
                     </div>
+                    <div class="feature__card--images feature__card-images--square"><img src="./images/synchro.png" alt=""></div>
                 </div>
             </div>
            </section>
@@ -109,57 +108,51 @@
 
           <!-- voice -->
            <section id="voice" class="voice section">
-            <div class="inner">
-                <h2 class="sec_hed">OrgaTaskを使ったユーザーの体験談</h2>
-                <p class="sec_subhed">多くのユーザーがその直感的な操作性とカスタマイズ性を高く評価しています。</p>
-                <div class="voice_contents">
-                    <div class="voice_content">
-                        <div class="voice_cont_text">
-                            <h3>「タスク管理が本当に楽になり、同僚にも勧めています！」</h3>
-                            <div class="voice_cont_evaluation">
-                                <p>評価:</p>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <p>(5/5)</p>
-                            </div>
-                            <p class="voice_cont_detail">複数のプロジェクトを管理する中で、いつもスケジュールの抜け漏れが不安でした。でも、OrgaTaskのAI機能がタスクの優先順位や記載漏れを提案してくれるおかげで、見落としがほぼゼロになりました。Googleカレンダーとも同期できるので、会議や締め切りもすぐ確認でき、仕事がスムーズになりました！</p>
-                            <p class="voice_cont_user">プロジェクトマネージャー（32歳）</p>
+            <div class="inner--m">
+                <h2 class="section__ttl voice__ttl">OrgaTaskを使ったユーザーの体験談</h2>
+                <p class="voice__subttl">多くのユーザーがその直感的な操作性とカスタマイズ性を高く評価しています。</p>
+                <div class="voice__contents">
+                    <div class="voice__contents-card">
+                        <h3 class="voice__card-ttl">「タスク管理が本当に楽になり、同僚にも勧めています！」</h3>
+                        <div class="voice__card-evaluation">
+                            <p class="voice__card-evaluation-text">評価:</p>
+                            <i class="fas fa-star voice__card-evaluation-star"></i>
+                            <i class="fas fa-star voice__card-evaluation-star"></i>
+                            <i class="fas fa-star voice__card-evaluation-star"></i>
+                            <i class="fas fa-star voice__card-evaluation-star"></i>
+                            <i class="fas fa-star voice__card-evaluation-star"></i>
+                            <p class="voice__card-evaluation-score">(5/5)</p>
                         </div>
+                        <p class="voice__card-comment">複数のプロジェクトを管理する中で、いつもスケジュールの抜け漏れが不安でした。でも、OrgaTaskのAI機能がタスクの優先順位や記載漏れを提案してくれるおかげで、見落としがほぼゼロになりました。Googleカレンダーとも同期できるので、会議や締め切りもすぐ確認でき、仕事がスムーズになりました！</p>
+                        <p class="voice__card-user">プロジェクトマネージャー（32歳）</p>
                     </div>
-                    <div class="voice_content">
+                    <div class="voice__contents-card">
+                        <h3 class="voice__card-ttl">「家族全員で共有する機能がとても便利」</h3>
+                        <div class="voice__card-evaluation">
+                            <p class="voice__card-evaluation-text">評価:</p>
+                            <i class="fas fa-star voice__card-evaluation-star"></i>
+                            <i class="fas fa-star voice__card-evaluation-star"></i>
+                            <i class="fas fa-star voice__card-evaluation-star"></i>
+                            <i class="fas fa-star voice__card-evaluation-star"></i>
+                            <p>(4/5)</p>
+                        </div>
+                        <p class="voice__card-comment">仕事と家事、子どもの予定を一元管理できるツールをずっと探していました。OrgaTaskは、家族全員のスケジュールを共有できるので、予定の調整がとても簡単です。リマインダーのおかげで、学校行事や買い物リストを忘れることがなくなりました！カレンダーの色分けがもっと細かくできたら完璧です！</p>
+                        <p class="voice__card-user">２児の母兼パート事務員（32歳）</p>
+                    </div>
+                    <div class="voice__contents-card">
                         <div class="voice_cont_text">
                             <div class="voice_cont_text">
-                                <h3>「家族全員で共有する機能がとても便利」</h3>
-                                <div class="voice_cont_evaluation">
-                                    <p>評価:</p>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
+                                <h3 class="voice__card-ttl">「使いやすい上に、タスク管理が楽しくなりました！」</h3>
+                                <div class="voice__card-evaluation">
+                                    <p class="voice__card-evaluation-text">評価:</p>
+                                    <i class="fas fa-star voice__card-evaluation-star"></i>
+                                    <i class="fas fa-star voice__card-evaluation-star"></i>
+                                    <i class="fas fa-star voice__card-evaluation-star"></i>
+                                    <i class="fas fa-star voice__card-evaluation-star"></i>
                                     <p>(4/5)</p>
                                 </div>
-                                <p class="voice_cont_detail">仕事と家事、子どもの予定を一元管理できるツールをずっと探していました。OrgaTaskは、家族全員のスケジュールを共有できるので、予定の調整がとても簡単です。リマインダーのおかげで、学校行事や買い物リストを忘れることがなくなりました！カレンダーの色分けがもっと細かくできたら完璧です！</p>
-                                <p class="voice_cont_user">２児の母兼パート事務員（32歳）</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="voice_content">
-                        <div class="voice_cont_text">
-                            <div class="voice_cont_text">
-                                <h3>「使いやすい上に、タスク管理が楽しくなりました！」</h3>
-                                <div class="voice_cont_evaluation">
-                                    <p>評価:</p>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <p>(4/5)</p>
-                                </div>
-                                <p class="voice_cont_detail">授業、課題、アルバイトの予定を把握するのが苦手で、毎回ギリギリになってしまうことが多かったのですが、OrgaTaskを使い始めてからは、リマインダーや進捗の可視化機能のおかげで余裕を持って取り組めるようになりました。特にタスクを色分けできるのが気に入っています！</p>
-                                <p class="voice_cont_user">大学生（21歳）</p>
+                                <p class="voice__card-comment">授業、課題、アルバイトの予定を把握するのが苦手で、毎回ギリギリになってしまうことが多かったのですが、OrgaTaskを使い始めてからは、リマインダーや進捗の可視化機能のおかげで余裕を持って取り組めるようになりました。特にタスクを色分けできるのが気に入っています！</p>
+                                <p class="voice__card-user">大学生（21歳）</p>
                             </div>
                         </div>
                     </div>
@@ -170,61 +163,61 @@
 
            <!-- plan -->
            <section id="plan" class="plan section">
-            <div class="inner">
-                <h2 class="sec_hed">プラン</h2>
-                <table class="plan-table">
+            <div class="inner--s">
+                <h2 class="section__ttl">プラン</h2>
+                <table class="plan__table">
                     <thead>
                         <tr>
-                            <th class="blank-plan"></th>
-                            <th class="free-plan">無料プラン</th>
-                            <th class="pay-plan">有料プラン</th>
+                            <th class="plan__thead-blank"></th>
+                            <th class="plan__thead-free">無料プラン</th>
+                            <th class="plan__thead-pay">有料プラン</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>タスク管理</td>
-                            <td><i class="far fa-circle"></i></td>
-                            <td><i class="far fa-circle"></i></td>
+                            <td><i class="far fa-circle plan__table-circle"></i></td>
+                            <td><i class="far fa-circle plan__table-circle"></i></td>
                         </tr>
                         <tr>
                             <td>スケジュール機能</td>
-                            <td><i class="far fa-circle"></i></td>
-                            <td><i class="far fa-circle"></i></td>
+                            <td><i class="far fa-circle plan__table-circle"></i></td>
+                            <td><i class="far fa-circle plan__table-circle"></i></td>
                         </tr>
                         <tr>
                             <td>クラウド同期</td>
-                            <td class="triangle-icon"><img src="./images/triangle.svg" alt="triangle">２台まで</td>
-                            <td><i class="far fa-circle"></i>無制限</td>
+                            <td class="plan__table-triangle"><img src="./images/triangle.svg" alt="triangle">２台まで</td>
+                            <td><i class="far fa-circle plan__table-circle"></i>無制限</td>
                         </tr>
                         <tr>
                             <td>チーム機能</td>
-                            <td class="triangle-icon"><img src="./images/triangle.svg" alt="triangle">２台まで</td>
-                            <td><i class="far fa-circle"></i>無制限</td>
+                            <td class="plan__table-triangle"><img src="./images/triangle.svg" alt="triangle">２台まで</td>
+                            <td><i class="far fa-circle plan__table-circle"></i>無制限</td>
                         </tr>
                         <tr>
                             <td>AIアシスタント</td>
-                            <td><i class="fas fa-times"></i></td>
-                            <td><i class="far fa-circle"></i></td>
+                            <td><i class="fas fa-times plan__table-cross"></i></td>
+                            <td><i class="far fa-circle plan__table-circle"></i></td>
                         </tr>
                         <tr>
                             <td>他アプリとの連携</td>
-                            <td><i class="fas fa-times"></i></td>
-                            <td><i class="far fa-circle"></i></td>
+                            <td><i class="fas fa-times plan__table-cross"></i></td>
+                            <td><i class="far fa-circle plan__table-circle"></i></td>
                         </tr>
                         <tr>
                             <td>広告</td>
-                            <td><i class="far fa-circle"></i>広告あり</td>
-                            <td><i class="fas fa-times"></i>広告なし</td>
+                            <td><i class="far fa-circle plan__table-circle"></i>広告あり</td>
+                            <td><i class="fas fa-times plan__table-cross"></i>広告なし</td>
                         </tr>
-                        <tr class="price-row">
+                        <tr class="plan__price-row">
                             <td>料金</td>
                             <td>無料</td>
-                            <td class="price-row_pay">月額500円</td>
+                            <td class="plan__price-row-pay">月額500円</td>
                         </tr>
                         
                     </tbody>
                 </table>
-                <a href="./html/under-construction.html" class="cta_btn btn">Webで無料で始める</a>
+                <a href="./html/under-construction.html" class="cta-btn plan__cta-btn">Webで無料で始める</a>
             </div>
            </section>
            <!-- plan end -->
@@ -271,7 +264,7 @@
                                 <a href="./html/under-construction.html" class="app_btn btn"><img src="./images/appstore_btn.svg" alt="App Storeからダウンロード"></a>
                                 <a href="./html/under-construction.html" class="goo_btn btn"><img src="./images/googleplay_btn.svg" alt="Google Playで手に入れよう"></a>
                             </div>
-                            <a href="./html/under-construction.html" class="cta_btn btn">Webで無料で始める</a>
+                            <a href="./html/under-construction.html" class="cta-btn">Webで無料で始める</a>
                         </div>
                         
                     </div>
