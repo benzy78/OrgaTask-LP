@@ -35,12 +35,10 @@
     box-shadow: none;
     border: 1px solid $ac_orange;
   }
-  @include tab{
-    font-size: 16px;
-    max-width: 350px;
-  }
   @include sp{
     max-width: 100%;
+    padding: 20px 0;
+    font-size: 16px;
   }
 }
 
@@ -58,7 +56,7 @@
   font-family: $ff-gothic;
   margin-bottom: 48px;
   line-height: 1;
-  @include sp{
+  @include tab{
     font-size: 24px;
     margin-bottom: 24px;
   }
@@ -76,4 +74,7 @@
   line-height: 0;
   color: $mc_blue;
   margin-right: 16px;
+  @include sp{
+    font-size: 16px;
+  }
 }

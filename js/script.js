@@ -1,13 +1,13 @@
 $(document).ready(function () {
-  $(".acco__btn").click(function () {
-    // ボタンの次の要素（acco_content）をスライドトグル
-    $(this).next(".acco__content").slideToggle(300);
-
-    // ボタンの矢印を回転
-    $(this).toggleClass("active");
+  // よくある質問のアコーディオン
+  $(".question__card-btn").click(function () {
+    $(this).next(".question__card-description").slideToggle(300);
+    $(this).toggleClass("turn");
   });
 });
+// よくある質問のアコーディオン end
 
+// headerのハンバーガーメニューの開閉
 document.addEventListener("DOMContentLoaded", () => {
   const menuToggle = document.querySelector(".header__menu-toggle");
   const navLinks = document.querySelector(".header__nav");
@@ -19,10 +19,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   navItems.forEach((link) => {
     link.addEventListener("click", () => {
-      navLinks.classList.remove("active"); // メニューを閉じる
+      navLinks.classList.remove("active"); 
     });
   });
-
+// headerのハンバーガーメニューの開閉 end
 
 // keyvisualの表示アニメーション
   $(document).ready(function () {
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
   $(document).ready(function() {
     // スクロール時に処理を実行
     $(window).on("scroll", function() {
-      $(".section .inner").each(function() {
+      $(".section .inner--s, .section .inner--m").each(function() {
         // 要素の位置を取得
         const elementTop = $(this).offset().top;
         const windowBottom = $(window).scrollTop() + $(window).height();
@@ -56,11 +56,11 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // 各セクションのアニメーション
+  // featureのアニメーション
   $(document).ready(function() {
     // スクロール時に処理を実行
     $(window).on("scroll", function() {
-      $(".fea_content").each(function() {
+      $(".feature__card").each(function() {
         // 要素の位置を取得
         const elementTop = $(this).offset().top;
         const windowBottom = $(window).scrollTop() + $(window).height();

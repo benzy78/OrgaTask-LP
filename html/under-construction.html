@@ -61,7 +61,23 @@
     <!--wrapper end-->
 
     <!-- script js-->
-    <script src="js/script.js"></script>
+    <script>
+      // 準備中のページの表示アニメーション
+      $(document).ready(function () {
+        const $un = $('.un__contents');
+        $(window).on('scroll', function () {
+          const scrollTop = $(window).scrollTop(); // 現在のスクロール位置
+          const windowHeight = $(window).height(); // ウィンドウの高さ
+          const offsetTop = $un.offset().top; // 要素の位置
+          // 要素が画面内に入ったらvisibleクラスを追加
+          if (scrollTop + windowHeight > offsetTop) {
+            $un.addClass('show');
+          }
+        });
+        // 初期表示でチェック（最初から表示される場合に対応）
+        $(window).trigger('scroll');
+      });
+    </script>
     <!-- wow -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 

@@ -2,13 +2,16 @@
 .header{
   background: $mc_gradient-blue;
   color: $fc_white;
-  padding: 16px;
+  padding: 16px 24px;
   position: fixed;
   top: 0;
   z-index: 100;
   width: 100%;
+  @include tab{
+    padding: 24px 24px 16px 24px;
+  }
   @include sp{
-    padding: 24px;
+    padding: 16px 24px;
   }
 }
 
@@ -28,12 +31,15 @@
       &:hover{
         border-bottom: 3px solid $fc_white;
       }
+      @include sp{
+        font-size: 24px;
+      }
   }
 }
 
 .header__menu-toggle{
   display: none;
-  @include sp{
+  @include tab{
     background: none;
     border: none;
     cursor: pointer;
@@ -70,7 +76,7 @@
   -webkit-transition: all .5s ease;
   -o-transition: all .5s ease;
   transition: all .5s ease;
-  @include sp{
+  @include tab{
     display: none;
   }
 
@@ -108,7 +114,7 @@
         background-color: $mc_blue;
         border: 1px solid $fc_white;
       }
-      @include sp{
+      @include tab{
         border: none;
         background-color: transparent;
         font-weight: normal;
@@ -121,7 +127,7 @@
 .active{
   .header__menu-toggle{
     .header__menu-icon{
-      @include sp{
+      @include tab{
         &:nth-child(1){
           -webkit-transform: translateY(0) rotate(225deg);
           -ms-transform: translateY(0) rotate(225deg);
@@ -141,7 +147,7 @@
     }
   }
   .header__nav-links{
-    @include sp{
+    @include tab{
       display: block;
       position: absolute;
       height: 100vh;
@@ -157,7 +163,7 @@
     li{
       width: 100%;
       a{
-        @include sp{
+        @include tab{
           padding: 30px;
           border-bottom: 1px solid $BaseColor2;
         }
@@ -172,7 +178,10 @@
 .keyvisual{
   background: $mc_gradient-blue;
   color: $fc_white;
-  padding: 96px 48px 48px 64px;
+  padding: 96px 24px 64px 24px;
+  @include tab{
+    padding: 88px 24px 24px 24px;
+  }
   @include sp{
     padding: 64px 24px 48px 24px;
   }
@@ -204,6 +213,10 @@
   font-size: 36px;
   margin-bottom: 32px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  @include tab{
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
 }
 
 .keyvisual__text-subttl{
@@ -212,26 +225,29 @@
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   @include tab{
     font-size: 16px;
+    margin-bottom: 24px;
   }
   @include sp{
     text-align: justify;
-    margin-bottom: 20px;
   }
 }
 
 .keyvisual__btn{
   margin-bottom: 32px;
+  @include tab{
+    margin-bottom: 16px;
+  }
   @include sp{
-    margin-bottom: 20px;
     width: 100%;
     display: flex;
-    gap: 32px;
+    gap: 16px;
     justify-content: space-between;
   }
 }
 
 .keyvisual__btn-app{
   margin-right: 32px;
+
   @include sp{
     display: block;
     width: 50%;
@@ -305,10 +321,13 @@
   &:last-child{
     margin-bottom: 0;
   }
+  @include tab{
+    padding-left: 32px;
+    margin-bottom: 24px;
+  }
   @include sp{
     flex-wrap: wrap;
-    margin-bottom: 20px;
-    padding: 20px;
+    padding: 24px;
     &:last-child{
       margin-bottom: 0;
     }
@@ -323,9 +342,9 @@
   margin-right: 64px;
 
   @include tab{
-    margin-top: 80px;
-    margin-right: 32px;
-    margin-bottom: 32px;
+    margin-top:64px;
+    margin-right: 24px;
+    margin-bottom: 24px;
   }
   
   @include sp{
@@ -338,7 +357,7 @@
 .feature__text-number{
   position: absolute;
   top: 0;
-  left: 0;
+  left: -1px;
   background: $mc_gradient-blue;
   color: $fc_white;
   padding: 0 29px;
@@ -359,20 +378,26 @@
 .feature__text-ttl{
   font-size: 30px;
   margin-bottom: 8px;
+  @include tab{
+    font-size: 20px;
+  }
 }
 
 .feature__text-description{
   text-align: justify;
   font-size: 20px;
+  @include tab{
+    font-size: 16px;
+  }
 }
 
-.feature__card--images{
+.feature__card-images{
   margin: 8px;
   @include sp{
     width: 100%;
     order: 1;
     padding: 0 70px;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
   }
   img{
     width: 200px;
@@ -385,9 +410,17 @@
 
 .feature__card-images--square{
   margin: 24px 24px 24px 0;
+  @include sp{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 16px;
+  }
   img{
     width: 350px;
     height: auto;
+    @include sp{
+      width: 100%;
+    }
   }
 }
 // feature end
@@ -400,12 +433,18 @@
 
 .voice__ttl{
   margin-bottom: 16px;
+  @include sp{
+    font-size: 20px;
+  }
 }
 
 .voice__subttl{
   font-size: 16px;
   margin-bottom: 48px;
   text-align: center;
+  @include tab{
+    margin-bottom: 24px;
+  }
 }
 
 .voice__contents{
@@ -413,8 +452,9 @@
   justify-content: space-between;
   width: 100%;
   gap: 48px;
-  @include sp{
+  @include tab{
     flex-wrap: wrap;
+    gap: 0;
   }
 }
 
@@ -428,7 +468,7 @@
   &:last-child{
     margin-right: 0;
   }
-  @include sp{
+  @include tab{
     max-width: 100%;
     width: 100%;
     margin-bottom: 24px;
@@ -441,6 +481,9 @@
 .voice__card-ttl{
   font-size: 20px;
   margin-bottom: 16px;
+  @include sp{
+    font-size: 16px;
+  }
 }
 
 .voice__card-evaluation{
@@ -483,8 +526,8 @@
   text-align: center;
   margin-bottom: 48px;
   border: none;
-  @include sp{
-    margin-bottom: 30px;
+  @include tab{
+    margin-bottom: 24px;
   }
 
   th{
@@ -597,19 +640,30 @@
   &:last-child{
     margin-bottom: 0;
   }
+  @include tab{
+    margin-bottom: 24px;
+  }
+  @include sp{
+    padding: 16px;
+  }
 }
 
 .question__card-ttl{
   font-size: 20px;
   margin-bottom: 16px;
+  @include sp{
+    font-size: 16px;
+    width: 80%;
+    margin-bottom: 0;
+  }
 }
 
 // sp時のみ表示
 .question__card-btn{
   top: 16px;
   right: 16px;
-  width: 50px;
-  height: 50px;
+  width: 48px;
+  height: 48px;
   background-color:$mc_blue;
   border-radius: 50%;
   display: flex;
@@ -619,28 +673,47 @@
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   display: none;
+  @include sp{
+    display: block;
+  }
 }
 
 .question__card-btn::before,
 .question__card-btn::after {
   content: "";
   position: absolute;
-  background-color: $bgc_white; /* プラスの色 */
+  background-color: $bgc_white;
   transition: all 0.3s ease-in-out;
 }
 
 .question__card-btn::before {
   width: 60%;
   height: 3px;
+  top: 22px;
+  left: 10px;
 }
 
 .question__card-btn::after {
   width: 3px;
   height: 60%;
+  top:  9px;
+  left: 23px;
+}
+
+.turn.question__card-btn::before,
+.turn.question__card-btn::after {
+  -webkit-transform: translateY(0) rotate(135deg);
+  -ms-transform: translateY(0) rotate(135deg);
+  transform: translateY(0) rotate(135deg);
 }
 
 .question__card-description{
   margin-left: 56px;
+  @include sp{
+    margin-left: 0;
+    display: none;
+    margin-top: 16px;
+  }
 }
 // question end
 
@@ -660,19 +733,26 @@
 
 .start__contents-text{
   margin-right: 56px;
-  max-width: 60%;
+  max-width: 554px;
   width: 100%;
   @include sp{
     max-width: 100%;
     margin-right: 0;
     width: 100%;
     margin-bottom: 24px;
+    text-align: justify;
   }
 }
 
 .start__text-ttl{
   font-size: 30px;
   margin-bottom: 24px;
+  @include tab{
+    font-size: 24px;
+  }
+  @include sp{
+    text-align: center;
+  }
 }
 
 .start__text-subttl{
@@ -695,6 +775,7 @@
   justify-content: space-between;
   @include sp{
     max-width: 100%;
+    margin-bottom: 16px;
   }
 }
 
@@ -766,6 +847,9 @@
   font-size: 20px;
   color: $fc_white;
   text-align: center;
+  @include sp{
+    font-size: 16px;
+  }
 }
 // footer end
 
@@ -861,36 +945,57 @@
 
 
 // アニメーション
-.keyvisual .inner {
+.keyvisual .inner--s {
   opacity: 0; 
   transform: translateY(50px);
-  transition: all 1s ease;
+  transition: all 0.5s ease-in-out;
 }
 
-.keyvisual .inner.show {
+.keyvisual .inner--s.show {
   opacity: 1;
   transform: translateY(0);
 }
 
-.section .inner {
+.section .inner--s {
   opacity: 0; 
   transform: translateY(50px); 
-  transition: all 0.8s ease; 
+  transition: all 0.5s ease-in-out;
 }
 
-.section .inner.show {
+.section .inner--s.show {
   opacity: 1; 
   transform: translateY(0);
 }
 
-.fea_content {
+.section .inner--m {
   opacity: 0; 
-  transform: translateY(50px);
-  transition: all 1s ease;
+  transform: translateY(50px); 
+  transition: all 0.5s ease-in-out;
 }
 
-.fea_content.show{
+.section .inner--m.show {
+  opacity: 1; 
+  transform: translateY(0);
+}
+
+.feature__card {
+  opacity: 0; 
+  transform: translateY(50px);
+  transition: all 0.5s ease-in-out;
+}
+
+.feature__card.show{
   opacity: 1; 
   transform: translateY(0); 
 }
 
+.un__contents {
+  opacity: 0; 
+  transform: translateY(50px);
+  transition: all 0.5s ease-in-out;
+}
+
+.un__contents.show {
+  opacity: 1;
+  transform: translateY(0);
+}
