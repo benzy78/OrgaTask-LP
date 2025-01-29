@@ -87,7 +87,7 @@
       display: block;
       color: $fc_white;
       font-family: $ff-gothic;
-      transition: all 0.5s ease;
+      transition: all 0.3s ease-in-out;
       &:hover{
         border-bottom: 3px solid $fc_white;
       }
@@ -102,7 +102,7 @@
       background-color: $bgc_white;
       color: $mc_blue;
       font-weight: bold;
-      transition: all 0.5s ease;
+      transition: all 0.3s ease-in-out;
       &:hover{
         color: $fc_white;
         background-color: $mc_blue;
@@ -582,332 +582,279 @@
 
 // question
 .question{
-  padding: 60px;
-  background-color: $BaseColor1;
-  @include sp{
-    padding: 30px 20px 50px 20px;
-  }
-  .que_contents{
-    margin: 0 auto;
-    max-width: 1040px;
-    width: 100%;
-    .que_content{
-      position: relative;
-      padding: 30px;
-      margin-bottom: 30px;
-      border-radius: 5px;
-      background-color: $BaseColor1;
-      border: 1px solid $BaseColor2;
-      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-      @include sp{
-        padding: 20px;
-        margin-bottom: 20px;
-        &:last-child{
-          margin-bottom: 0;
-        }
-      }
-      h3{
-        font-size: 20px;
-        font-family: $ff-gothic;
-        line-height: 1;
-        @include tab{
-          font-size: 16px;
-        }
-        @include sp{
-          line-height: 1.5;
-          padding-right: 30px;
-          font-weight: normal;
-        }
-        span{
-          font-size: 24px;
-          color: $MainColor1;
-          margin-right: 15px;
-          @include tab{
-            font-size: 20px;
-          }
-        }
-      }
-      .fas{
-        font-size: 30px;
-        color: $MainColor1;
-        position: absolute;
-        top: 30px;
-        right: 60px;
-        transition: all 0.5s ease;
-        cursor: pointer;
-        @include sp{
-          right: 20px;
-        }
-      }
-      p{
-        font-size: 16px;
-        font-family: $ff-gothic;
-        margin-top: 15px;
-        display: none;
-      }
-    }
+  padding: 48px 24px 64px 24px;
+  background-color: $bgc_white;
+}
+
+.question__card{
+  position: relative;
+  padding: 24px;
+  margin-bottom: 48px;
+  border-radius: 5px;
+  background-color: $bgc_white;
+  border: 1px solid $bgc_glay;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  &:last-child{
+    margin-bottom: 0;
   }
 }
 
-.acco_btn.active{
-  transform: rotate(180deg);
+.question__card-ttl{
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+// sp時のみ表示
+.question__card-btn{
+  top: 16px;
+  right: 16px;
+  width: 50px;
+  height: 50px;
+  background-color:$mc_blue;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  display: none;
+}
+
+.question__card-btn::before,
+.question__card-btn::after {
+  content: "";
+  position: absolute;
+  background-color: $bgc_white; /* プラスの色 */
+  transition: all 0.3s ease-in-out;
+}
+
+.question__card-btn::before {
+  width: 60%;
+  height: 3px;
+}
+
+.question__card-btn::after {
+  width: 3px;
+  height: 60%;
+}
+
+.question__card-description{
+  margin-left: 56px;
 }
 // question end
 
 // start
 .start{
-  padding: 60px;
-  background-color: $MainColor2;
+  padding: 48px 24px 64px 24px;
+  background-color: $bgc_light-blue;
+}
 
+.start__contents{
+  display: flex;
+  justify-content: space-between;
   @include sp{
-    padding: 30px 20px 50px 20px;
-  }
-  .start_contents{
-    display: flex;
-    justify-content: space-between;
-    @include sp{
-      flex-wrap: wrap;
-    }
-    .start_cont_text{
-      margin-right: 60px;
-      max-width: 60%;
-      width: 100%;
-      @include tab{
-        margin-right: 30px;
-      }
-      @include sp{
-        max-width: 100%;
-        margin-right: 0;
-        width: 100%;
-        margin-bottom: 20px;
-      }
-
-      .start_hed{
-        font-size: 30px;
-        margin-bottom: 20px;
-        @include tab{
-          font-size: 24px;
-        }
-        @include sp{
-          font-size: 20px;
-          text-align: center;
-        }
-      }
-      .start_subhed{
-        font-size: 16px;
-        @include sp{
-          text-align: justify;
-        }
-      }
-    }
-    
-  }
-  .start_cont_btn{
-    width: 100%;
-    max-width: 50%;
-    @include sp{
-      max-width: 100%;
-    }
-  }
-  .download_btn{
-    margin-bottom: 30px;
-    display: flex;
-    max-width: 440px;
-    width: 100%;
-    @include tab{
-      max-width: 365px;
-      margin-bottom: 20px;
-    }
-    @include sp{
-      margin-bottom: 20px;
-      max-width: 100%;
-      display: flex;
-      justify-content: space-between;
-    }
-    .app_btn{
-      margin-right: 30px;
-      display: block;
-      @include sp{
-        margin-right: 10px;
-        width: 100%;
-      }
-      img{
-        width: 195px;
-        height: 65px;
-        @include tab{
-          width: 150px;
-          height: auto;
-        }
-        @include sp{
-          width: 95%;
-        }
-      }
-    }
-    .goo_btn{
-      @include sp{
-        display: block;
-        width: 100%;
-      }
-      img{
-        width: 195px;
-        height: 65px;
-        @include tab{
-          width: 165px;
-          height: auto;
-        }
-        @include sp{
-          width: 100%;
-        }
-      }
-    }
-  }
-  .cta_btn{
-    
+    flex-wrap: wrap;
   }
 }
 
+.start__contents-text{
+  margin-right: 56px;
+  max-width: 60%;
+  width: 100%;
+  @include sp{
+    max-width: 100%;
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 24px;
+  }
+}
+
+.start__text-ttl{
+  font-size: 30px;
+  margin-bottom: 24px;
+}
+
+.start__text-subttl{
+  font-size: 16px;
+}
+
+.start__contents-btn{
+  width: 100%;
+  max-width: 430px;
+  @include sp{
+    max-width: 100%;
+  }
+}
+
+.start__btn-group{
+  margin-bottom: 32px;
+  display: flex;
+  max-width: 430px;
+  width: 100%;
+  justify-content: space-between;
+  @include sp{
+    max-width: 100%;
+  }
+}
+
+.start__btn-app{
+  margin-right: 32px;
+  display: block;
+  @include sp{
+    margin-right: 16px;
+    width: 100%;
+  }
+  img{
+    width: 200px;
+    height: 65px;
+    @include sp{
+      width: 95%;
+    }
+  }
+}
+
+.start__btn-goo{
+  @include sp{
+    display: block;
+    width: 100%;
+  }
+  img{
+    width: 200px;
+    height: 65px;
+    @include sp{
+      width: 100%;
+    }
+  }
+}
 
 // start end
 .footer{
-  background: $GradationColor;
-  padding: 50px;
-  @include sp{
-    padding: 30px 20px 50px 20px;
-  }
-  .footer_contents{
-    margin-bottom: 60px;
-    display: flex;
-    justify-content: center;
-    @include sp{
-      margin-bottom: 30px;
-      flex-wrap: wrap;
-    }
-    li{
-      list-style: none;
-      margin-right: 60px;
-      &:last-child{
-        margin-right: 0;
-      }
-      @include sp{
-        margin-right: 0;
-        width: 100%;
-        margin-bottom: 20px;
-        text-align: center;
-      }
-      a{
-        display: block;
-        color: $BaseColor1;
-        font-family: $ff-gothic;
-        font-size: 16px;
+  padding: 48px 24px 64px 24px;
+  background: $mc_gradient-blue;
+}
 
-      }
-    }
+.footer__contents{
+  margin-bottom: 48px;
+  display: flex;
+  justify-content: center;
+  @include sp{
+    margin-bottom: 24px;
+    flex-wrap: wrap;
   }
-  p{
-    font-size: 20px;
-    font-family: $ff-gothic;
-    color: $BaseColor1;
-    text-align: center;
-    @include tab{
+  li{
+    list-style: none;
+    margin-right: 48px;
+    &:last-child{
+      margin-right: 0;
+    }
+    @include sp{
+      margin-right: 0;
+      width: 100%;
+      margin-bottom: 24px;
+      text-align: center;
+    }
+    a{
+      display: block;
+      color: $fc_white;
       font-size: 16px;
+
     }
   }
+}
+.footer__contents-copyright{
+  font-size: 20px;
+  color: $fc_white;
+  text-align: center;
 }
 // footer end
 
 
 // under-construction page
-.header_un{
-  padding: 20px;
-  background: $GradationColor;
-  color: $BaseColor1;
-  font-family: $ff-en-maru;
-  h1{
-    font-size: 30px;
-    @include tab{
-      font-size: 24px;
-    }
-    @include sp{
-      font-size: 20px;
-    }
-  }
-}
+
 .under-construction{
-  padding: 100px;
-  background-color: $MainColor2;
+  padding: 144px 24px;
+  background-color: $bgc_light-blue;
   @include sp{
     padding: 30px 20px 50px 20px;
   }
-  .un_contents{
-    display: flex;
-    justify-content: space-between;
+}
+
+.un__contents{
+  display: flex;
+  justify-content: space-between;
+  @include sp{
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+
+.un__contents-eyecatch{
+  width: 40%;
+  @include sp{
+    width: 100%;
+    padding-left: 50px;
+    margin-bottom: 30px;
+  }
+  img{
+    max-width: 526px;
+    width: 100%;
+    height: auto;
     @include sp{
-      flex-wrap: wrap;
-      width: 100%;
+      max-width: 100%;
     }
-    .un_cont_eyecatch{
-      width: 40%;
-      @include sp{
-        width: 100%;
-        padding-left: 50px;
-        margin-bottom: 30px;
-      }
-      img{
-        max-width: 526px;
-        width: 100%;
-        height: auto;
-        @include sp{
-          max-width: 100%;
-        }
-      }
-    }
-    .un_cont_text{
-      width: 60%;
-      margin-top: 60px;
-      @include sp{
-        width: 100%;
-        margin-top: 0;
-        text-align: center;
-      }
-      h1{
-        font-size: 30px;
-        margin-bottom: 30px;
-        @include tab{
-          font-size: 24px;
-        }
-        @include sp{
-          font-size: 18px;
-          margin-bottom: 30px;
-        }
-      }
-      p{
-        font-size: 20px;
-        margin-bottom: 60px;
-        @include sp{
-          font-size: 16px;
-        }
-      }
-      .return_btn{
-        padding: 15px 0;
-        text-align: center;
-        display: block;
-        color: $MainColor1;
-        max-width: 430px;
-        width: 100%;
-        font-size: 20px;
-        font-weight: bold;
-        border-radius: 5px;
-        border: 1px solid $MainColor1;
-        background-color: $BaseColor1;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-        transition: all 0.7s;
-        @include sp{
-          font-size: 16px;
-          padding: 10px 0;
-          margin: 0 auto;
-        }
-      }
-    }
+  }
+}
+
+.un__contents-text{
+  width: 60%;
+  margin-top: 60px;
+  @include sp{
+    width: 100%;
+    margin-top: 0;
+    text-align: center;
+  }
+}
+
+.un__text-ttl{
+  font-size: 32px;
+  margin-bottom: 32px;
+  @include sp{
+    font-size: 24px;
+  }
+}
+
+.un__text-description{
+  font-size: 20px;
+  margin-bottom: 64px;
+  @include sp{
+    font-size: 16px;
+  }
+}
+
+.un__text-btn{
+  padding: 15px 0;
+  text-align: center;
+  display: block;
+  color: $mc_blue;
+  max-width: 430px;
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 1px solid $mc_blue;
+  background-color: $bgc_white;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s;
+  &:hover{
+    box-shadow: none;
+    background-color: $mc_blue;
+    color: $fc_white;
+  }
+  @include sp{
+    font-size: 16px;
+    padding: 10px 0;
+    margin: 0 auto;
   }
 }
 // under-construction end
