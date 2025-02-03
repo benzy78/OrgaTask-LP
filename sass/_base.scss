@@ -19,11 +19,11 @@ body {
 	font-family: $ff-gothic;
 	font-size: $fz-base;
 	font-weight: $fw-base;
-	color: $MainColor3;
+	color: $fc-black;
 	line-height: $lh-base;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	background: $BaseColor1;
+	background: $bgc_white;
 	overflow-x: hidden;
 }
 
@@ -60,17 +60,17 @@ table {
 	border-spacing: 0;
 	width: 100%;
 	table-layout: fixed;
-	border: 1px solid $MainColor3;
+	border: 1px solid $fc-black;
 }
 
 th,td {
-	border: 1px solid $MainColor3;
+	border: 1px solid $fc-black;
 }
 
 
 input,textarea {
 	padding: 8px;
-	border: 1px solid $MainColor3;
+	border: 1px solid $fc-black;
 	border-radius: 0;
 	background-image: none;
 	font-family: inherit;
@@ -79,7 +79,7 @@ input,textarea {
 
 	&:focus {
 		outline: none;
-		border: 1px solid $MainColor3;
+		border: 1px solid $fc-black;
 		box-shadow: none;
 	}
 }
@@ -123,7 +123,7 @@ input {
 				left: 0;
 				transform: translateY(-50%);
 				background: #fff;
-				border: 1px solid $MainColor3;
+				border: 1px solid $fc-black;
 				border-radius: 50%;
 				width: 1em;
 				height: 1em;
@@ -140,7 +140,7 @@ input {
 				outline: none;
 				border: 1px solid #fff;
 				box-shadow: none;
-				background: $MainColor3;
+				background: $fc-black;
 			}
 		}
 
@@ -152,7 +152,7 @@ input {
 				top: 50%;
 				left: 0.2em;
 				transform: translateY(-50%);
-				background: $MainColor3;
+				background: $fc-black;
 				border-radius: 50%;
 				width: 0.6em;
 				height: 0.6em;
@@ -180,7 +180,7 @@ input {
 				left: 0;
 				transform: translateY(-50%);
 				background: #fff;
-				border: 1px solid $MainColor3;
+				border: 1px solid $fc-black;
 				border-radius: 2px;
 				width: 1em;
 				height: 1em;
@@ -205,8 +205,8 @@ input {
 				height: 0.6em;
 				margin-top: -0.2em;
 				display: block;
-				border-left: 3px solid $MainColor3;
-				border-bottom: 3px solid $MainColor3;
+				border-left: 3px solid $fc-black;
+				border-bottom: 3px solid $fc-black;
 				opacity: 1;
 			}
 		}
@@ -218,7 +218,7 @@ select {
 	padding: 8px 24px 8px 8px;
 	border-radius: 0;
 	background-image: none;
-	border: 1px solid $MainColor3;
+	border: 1px solid $fc-black;
 	font-family: inherit;
 	font-size: 1em;
 	cursor: pointer;
@@ -231,7 +231,7 @@ select {
 
 	&:focus {
 		outline: none;
-		border: 1px solid $MainColor3;
+		border: 1px solid $fc-black;
 		box-shadow: none;
 	}
 }

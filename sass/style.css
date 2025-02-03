@@ -23,7 +23,7 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #fff;
+  background: #ffffff;
   overflow-x: hidden;
 }
 
@@ -229,7 +229,7 @@ select:focus {
   padding: 24px 0;
   text-align: center;
   display: block;
-  color: #fff;
+  color: #ffffff;
   max-width: 430px;
   width: 100%;
   font-size: 20px;
@@ -453,7 +453,7 @@ select:focus {
     display: block;
     position: absolute;
     height: 100vh;
-    background: linear-gradient(270deg, rgba(15, 25, 191, 0.9), rgba(7, 19, 89, 0.9));
+    background: linear-gradient(270deg, #0f19bf, #071359);
     top: 0;
     width: 100%;
     left: 0;
@@ -468,7 +468,7 @@ select:focus {
 @media (max-width: 992px) {
   .active li a {
     padding: 30px;
-    border-bottom: 1px solid #f5f5f5;
+    border-bottom: 1px solid #ffffff;
   }
 }
 
@@ -737,7 +737,7 @@ select:focus {
   .feature__card-images {
     width: 100%;
     order: 1;
-    padding: 0 70px;
+    padding: 0 25%;
     margin-bottom: 16px;
   }
 }
@@ -1017,10 +1017,10 @@ select:focus {
 }
 
 .question__card-btn {
-  top: 16px;
+  top: 8px;
   right: 16px;
-  width: 48px;
-  height: 48px;
+  width: 44px;
+  height: 44px;
   background-color: #0f19bf;
   border-radius: 50%;
   display: flex;
@@ -1048,15 +1048,15 @@ select:focus {
 .question__card-btn::before {
   width: 60%;
   height: 3px;
-  top: 22px;
-  left: 10px;
+  top: 21px;
+  left: 9px;
 }
 
 .question__card-btn::after {
   width: 3px;
   height: 60%;
   top: 9px;
-  left: 23px;
+  left: 21px;
 }
 
 .turn.question__card-btn::before,

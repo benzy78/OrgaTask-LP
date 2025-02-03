@@ -156,7 +156,7 @@
       display: block;
       position: absolute;
       height: 100vh;
-      background: $GradationPermeColor;
+      background: $mc_gradient-blue;
       top: 0;
       width: 100%;
       left: 0;
@@ -170,7 +170,7 @@
       a{
         @include tab{
           padding: 30px;
-          border-bottom: 1px solid $BaseColor2;
+          border-bottom: 1px solid $fc_white;
         }
       }
     }
@@ -401,7 +401,7 @@
   @include sp{
     width: 100%;
     order: 1;
-    padding: 0 70px;
+    padding: 0 25%;
     margin-bottom: 16px;
   }
   img{
@@ -560,8 +560,8 @@
     background-color: $bgc_white;
   }
   tbody td:nth-child(3) {
-    border-left: 3px solid $MainColor1;
-    border-right: 3px solid $MainColor1;
+    border-left: 3px solid $mc_blue;
+    border-right: 3px solid $mc_blue;
   }
 }
 
@@ -665,10 +665,10 @@
 
 // sp時のみ表示
 .question__card-btn{
-  top: 16px;
+  top: 8px;
   right: 16px;
-  width: 48px;
-  height: 48px;
+  width: 44px;
+  height: 44px;
   background-color:$mc_blue;
   border-radius: 50%;
   display: flex;
@@ -694,15 +694,15 @@
 .question__card-btn::before {
   width: 60%;
   height: 3px;
-  top: 22px;
-  left: 10px;
+  top: 21px;
+  left: 9px;
 }
 
 .question__card-btn::after {
   width: 3px;
   height: 60%;
   top:  9px;
-  left: 23px;
+  left: 21px;
 }
 
 .turn.question__card-btn::before,
