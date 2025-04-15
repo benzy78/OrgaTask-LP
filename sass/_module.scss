@@ -26,14 +26,13 @@
   line-height: 1;
   border-radius: 5px;
   background-color: $ac_orange;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-in-out;
   border: 1px solid $ac_orange;
   &:hover{
-    background-color: $bgc_white;
-    color: $ac_orange;
+    background-color:#BC5A41;
     box-shadow: none;
-    border: 1px solid $ac_orange;
+    transform: translateY(-2px); 
   }
   @include sp{
     max-width: 100%;

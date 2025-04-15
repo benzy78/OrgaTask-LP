@@ -238,15 +238,14 @@ select:focus {
   line-height: 1;
   border-radius: 5px;
   background-color: #e76f51;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-in-out;
   border: 1px solid #e76f51;
 }
 .cta-btn:hover {
-  background-color: #ffffff;
-  color: #e76f51;
+  background-color: #BC5A41;
   box-shadow: none;
-  border: 1px solid #e76f51;
+  transform: translateY(-2px);
 }
 @media (max-width: 768px) {
   .cta-btn {
@@ -311,7 +310,7 @@ select:focus {
 }
 @media (max-width: 768px) {
   .header {
-    padding: 8px 24px;
+    padding: 16px 24px;
   }
 }
 
@@ -348,11 +347,12 @@ select:focus {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 56px;
-    width: 48px;
+    height: 48px;
+    width: 44px;
     padding: 0;
-    padding-top: 8px;
-    position: relative;
+    position: absolute;
+    top: 16px;
+    right: 24px;
     z-index: 100;
   }
 }
@@ -362,14 +362,26 @@ select:focus {
   height: 3px;
   width: 100%;
   border-radius: 5px;
-  transition: all 0.3s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+  position: absolute;
+}
+.header__menu-icon:nth-child(1) {
+  top: 8px;
+}
+.header__menu-icon:nth-child(2) {
+  top: 16px;
+}
+.header__menu-icon:nth-child(3) {
+  top: 24px;
 }
 
 .header__menu-label {
   font-size: 14px;
   color: #ffffff;
-  padding: 0 7px;
-  transition: all 0.3s ease-in-out 0s;
+  padding: 0 4px;
+  transition: all 0.4s ease-in-out 0s;
+  position: absolute;
+  top: 34px;
 }
 
 .header__nav-links {
@@ -402,7 +414,7 @@ select:focus {
   transition: all 0.3s ease-in-out;
 }
 .header__nav-links li a:hover {
-  border-bottom: 3px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
 }
 @media (max-width: 992px) {
   .header__nav-links li a {
@@ -434,13 +446,10 @@ select:focus {
 
 .active .header__menu-toggle .header__menu-icon:nth-child(1) {
   transform: translateY(0) rotate(225deg);
-  position: absolute;
-  top: 24px;
+  top: 16px;
 }
 .active .header__menu-toggle .header__menu-icon:nth-child(2) {
   transform: translateY(0) rotate(-225deg);
-  position: absolute;
-  top: 24px;
 }
 .active .header__menu-toggle .header__menu-icon:nth-child(3) {
   display: none;
@@ -641,7 +650,7 @@ select:focus {
   justify-content: start;
   background-color: #ffffff;
   border: 1px solid #f5f5f5;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 48px;
   padding-left: 64px;
   position: relative;
@@ -813,7 +822,7 @@ select:focus {
   padding: 24px;
   border-radius: 5px;
   border: 1px solid #f5f5f5;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
   max-width: 33.3%;
   width: 100%;
 }
@@ -988,7 +997,7 @@ select:focus {
   border-radius: 5px;
   background-color: #ffffff;
   border: 1px solid #f5f5f5;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
 }
 .question__card:last-child {
   margin-bottom: 0;
@@ -1318,7 +1327,7 @@ select:focus {
   border-radius: 5px;
   border: 1px solid #0f19bf;
   background-color: #ffffff;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
   transition: all 0.3s;
 }
 .un__text-btn:hover {
